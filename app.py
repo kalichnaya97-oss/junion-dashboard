@@ -12,7 +12,7 @@ st.set_page_config(
 # Загрузка данных
 @st.cache_data(ttl=300)
 def load_data():
-    url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTdbFQUQMBj8Zvxx3ig-7uAaVO3NGQ54A4ux4Nv1dWWQB4x4Y0_IYkmIWB5_DyimA39fK3MNp8nftJb/pub?gid=2800558282&single=true&output=csv"
+    url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTdbFQUQMBj8Zvxx3ig-7uAaVO3NGQ54A4ux4Nv1dWWQB4x4Y0_IYkmIWB5_DyimA39fK3MNp8nftJb/pub?gid=28005582&single=true&output=csv"
     df = pd.read_csv(url)
     return df
 
